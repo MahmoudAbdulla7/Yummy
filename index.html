@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMMY</title>
+    <link rel="icon" href="./img/logo (1).ico">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="loading position-absolute start-0 end-0 bottom-0 top-0 bg-black d-flex align-items-center z-3 ">
+        <div class="spinner">
+            <div class="rect1 bg-light"></div>
+            <div class="rect2 bg-light"></div>
+            <div class="rect3 bg-light"></div>
+            <div class="rect4 bg-light"></div>
+            <div class="rect5 bg-light"></div>
+        </div>
+    </div>
+    <nav class="vh-100 position-fixed position-relative sideNav z-2 ">
+        <div class="left toSlide">
+            <div>
+                <ul class="d-flex flex-column ">
+                    <li class="list-unstyled list fs-6 ">
+                        <p class=" p-2 cursor-pointer text-light fw-light" id="search">search</p>
+                    </li>
+                    <li class="list-unstyled list fs-6 ">
+                        <p class=" p-2 cursor-pointer text-light fw-light" id="categories">Categories</p>
+                    </li>
+                    <li class="list-unstyled list fs-6 ">
+                        <p class=" p-2 cursor-pointer text-light fw-light" id="area">Area</p>
+                    </li>
+                    <li class="list-unstyled list fs-6 ">
+                        <p class=" p-2 cursor-pointer text-light fw-light" id="ingredients">Ingredients</p>
+                    </li>
+                    <li class="list-unstyled list fs-6 ">
+                        <p class=" p-2 cursor-pointer text-light fw-light" id="contact">Contact Us</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-light position-absolute bottom-0">
+                <div class="d-flex my-3">
+                    <i class="fa-brands fa-facebook mx-2"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-solid fa-globe mx-2"></i>
+                </div>
+                <p class="w-75 mx-2 text-light">
+                    Copyright Â© 2019 All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        <div class="right position-absolute end-0 top-0 bottom-0">
+            <div class="my-4 d-flex flex-column m-auto text-center align-items-center vh-100">
+                <div class="startBar">
+                    <img src="img/logo.png" class="w-50" alt="">
+                </div>
+                <div class="centerBar position-absolute top-50">
+                    <i class="fa-solid fa-bars fs-3 show d-none text-warning"></i>
+                    <i class="fa-solid fa-xmark  fs-3 hide text-warning"></i>
+                </div>
+                <div class="d-flex flex-column position-absolute bottom-0">
+                    <i class="fa-solid fa-globe mx-2 my-2 fs-3 "></i>
+                    <i class="fa-solid fa-share-nodes my-2 fs-3 mb-3 "></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container meals w-75 m-auto pt-5">
+        <div id="row" class="row py-5 m-auto">
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"> </script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
